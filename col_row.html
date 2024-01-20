@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<style type="text/css">
+    .row div{
+        border: 1px solid silver;
+    }
+</style>
+<body>
+   <div class="container">
+    <h3>Basic columns</h3>
+    <div class="row">
+        <div class="col">col 1</div>
+        <div class="col">col 2</div>
+    </div>
+   </div>
+   <br>
+    <h2>Set size</h2>
+<!--tối đa 12 cột 1-->
+   <div class="container">
+    <h3>col-(1-12)< 576 </h3>
+    <div class="row">
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        
+    </div>
+   </div>
+<!--sm- -->
+   <div class="container">
+    <h3>576 < col-sm-(1-12) < 768</h3>
+    <div class="row">
+        <div class="col-sm">col sm</div>
+        <div class="col-sm">col sm</div>
+    </div>
+   </div>
+<!--md--->
+<div class="container">
+    <h3>768 < col-md-(1-12) < 992</h3>
+    <div class="row">
+        <div class="col-md">col md</div>
+        <div class="col-md">col md</div>
+    </div>
+   </div>
+<!--lg--->
+<div class="container">
+    <h3>992 < col-lg-(1-12) < 1200</h3>
+    <div class="row">
+        <div class="col-lg">col lg</div>
+        <div class="col-lg">col lg</div>
+    </div>
+   </div>
+<!--xl- -->
+<div class="container">
+    <h3> col-xl-(1-12) > 1200</h3>
+    <div class="row">
+        <div class="col-xl">col xl</div>
+        <div class="col-xl">col xl</div>
+    </div>
+   </div>
+
+<!--  -->
+<div class="container">
+    <h3> Kiểm soát số cột cạnh nhau: row-cols-(1-12)</h3>
+    <div class="row row-cols-2">
+        <div class="col">1 of 4</div>
+        <div class="col">2 of 4</div>
+        <div class="col">3 of 4</div>
+        <div class="col">4 of 4</div>
+      </div>
+   </div>
+<!-- Cột lồng nhau -->
+<div class="container">
+    <h3> Lồng cột</h3>
+    <div class="row">
+        
+        <div class="col">
+            col1
+            <div class="row">
+                <div class="col">col1.1</div>
+                <div class="col">col1.2</div>
+    
+            </div>
+        </div>
+        <div class="col">
+            col2
+            <div class="row">
+                <div class="col">col2.1</div>
+                <div class="col">col2.2</div>
+                <div class="col">col2.3</div>
+
+    
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mix and match -->
+<div class="container">
+    <h3> Mix and match</h3>
+    <div class="row row-cols-2">
+        <div class="col-sm-6 col-md-4">col-sm-6 col-md-4 </div>
+        <div class="col-sm-6 col-md-8">col-sm-6 col-md-8</div>
+        
+      </div>
+   </div>
+<!-- no-gutters -->
+<div class="container">
+    <h3> Loại bỏ khoảng trắng</h3>
+    <div class="row">
+        
+        <div class="col">
+            gutters
+            <div class="row">
+                <div class="col">col1.1</div>
+                <div class="col">col1.2</div>
+    
+            </div>
+        </div>
+        <div class="col">
+            no-gutters
+            <div class="row no-gutters">
+                <div class="col">col2.1</div>
+                <div class="col">col2.2</div>
+                <div class="col">col2.3</div>
+
+    
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
